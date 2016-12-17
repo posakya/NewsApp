@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.roshan.cinqsnipe.Description">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:visibility="gone"
+            android:max="100"
+            android:layout_marginTop="-10dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/animation" />
+
+        <WebView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="always"
+        android:id="@+id/webview"
+        android:visibility="gone"
+        ></WebView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/txt_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_description"
+        android:text="description"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_author"
+            android:layout_weight="0.5"
+            android:text="author"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="category"
+            android:layout_weight="0.5"
+            android:id="@+id/txt_category"
+          />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="link"
+        android:id="@+id/txt_link"
+        android:padding="5dp"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_description"
+        android:id="@+id/btn_read_more"
+        android:background="#89c0"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Read More"/>
+    </LinearLayout>
+</ScrollView>

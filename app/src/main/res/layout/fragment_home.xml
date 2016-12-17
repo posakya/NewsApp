@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:padding="10dp"
+    tools:context="com.example.roshan.cinqsnipe.fragment.Home">
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:paddingTop="20dp"
+        android:id="@+id/ViewFlipper">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image1"
+            android:src="@drawable/onlinekhabar"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image2"
+            android:src="@drawable/ratopati_logo"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image3"
+            android:src="@drawable/setopati"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image4"
+            android:src="@drawable/thahakhabar"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image5"
+            android:src="@drawable/ujyalo"/>
+
+    </ViewFlipper>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="116dp"
+        android:layout_height="154dp"
+        android:paddingTop="3dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Source"
+            android:id="@+id/txt_source"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pubDate"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_pubdate"/>
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ht"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageicon"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="0.50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/txt_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:id="@+id/txt_description"
+            android:layout_marginTop="10dp"
+            android:maxLength="100"
+            android:ellipsize="end"
+            android:text="Description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_category"
+            android:layout_marginTop="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Category"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@id/txt_author"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:id="@id/txt_link"/>
+    </LinearLayout>
+
+
+</LinearLayout>
